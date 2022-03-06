@@ -35,7 +35,7 @@ WORKDIR elixir/
 RUN make install -e PATH="${PATH}:/usr/local/bin"
 
 # Install node
-RUN curl -sL https://rpm.nodesource.com/setup_12.x | bash - && \
+RUN curl -sL https://rpm.nodesource.com/setup_16.x | bash - && \
   yum install nodejs -y
 
 # prepare build dir
